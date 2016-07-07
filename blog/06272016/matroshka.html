@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Emma | Labs</title>
+  <meta name="viewport" content="width=device-width">
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../../files/style.css" rel="stylesheet">
+  <link href="../../files/colors-dark.css" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header">
+    <a href="index.html"><img alt="Emma | Labs" src="../../files/logo.png"></a>
+  </header>
+
+  <div id="page">
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../blog.html">Blog</a></li>
+		  <li><a href="../../links.html">Links</a></li>
+          <li><a href="../../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="content">     
+<div id="blog-archives">
+
+
+	<h1><strong>Day1: Matroshka</strong></h1>
+	<blockquote>
+	
+	</blockquote>
+    <strong> File arquivo</strong><p>     
+	 
+<code>
+[emma@cypherpunk~ file Day1-Matroshka.zip
+Day1-Matroshka.zip: Zip archive data, at least v1.0 to extract
+</code><p>
+<strong>surpresa!</strong><p>
+
+<code>Vi que que o arquivo é um zip, então descompactei, mas veio outro zip, e dentro dele, veio mais um zip e foi assim que percebi que poderia ser um trabalho manual muito grande pois não sabia até onde iria a brincadeira com os zips :D 
+</code><p>
+<strong>Hora do Bash</strong><p>
+<code>Nessa hora fez sentido o nome do challenge então fiz esse script para resolver essa boneca russa do primeiro dia.<br><br>
+while true; do find . -name "*.zip" | while read filename; do unzip -o -d "`basename -s .zip "$filename"`" "$filename" && cd ./zip; done; if [ -f zip/flag.bin ]; then break; fi; done;<br><br>
+Perceba que o script para quando ele acha o flag.bin, antes de fazer esse script com break ele fazia ao infinito e além, no lixo que aparecia no terminal percebi que existia esse arquivo, então coloquei o break :D
+</code><p>
+<strong>Done! Have fun!</strong>
+
+
+
+</div>
+
+    </div>
+
+  </div>
+
+
+  <footer id="footer">
+    <p class="copyright">Hack The Planet!</p>
+    <!-- Thanks to <a href="http://www.webmaster-source.com">Matt Harzewski</a> for the theme!!!</p> -->
+  </footer>
+
+  <script src="../../files/jquery.min.js"></script>
+  <script src="../../files/jquery.mobilemenu.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+
+
+</body></html>

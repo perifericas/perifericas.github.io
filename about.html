@@ -1,0 +1,49 @@
+<!DOCTYPE  html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Perifericas | RGSoC</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="./files/style.css" rel="stylesheet">
+  <link href="./files/colors-dark.css" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header">
+    <a href="index.html"><img alt="Perifericas | RGSoC" src="./files/logo.png"></a>
+  </header>
+
+  <div id="page">
+
+ <div id="sidebar">
+   <nav>
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="blog.html">Blog</a></li>
+	   <li><a href="links.html">Links</a></li>
+       <li><a href="about.html">About</a></li>	  
+     </ul>
+   </nav>
+ </div>
+
+  <div id="content">
+      <h1 id="about">About</h1>
+
+	#Write our about here
+  </div>
+
+ <footer id="footer">
+    <p class="copyright">Get excited and make things!</p>
+    <!-- Thanks to <a href="http://www.webmaster-source.com">Matt Harzewski</a> for the theme!!!</p> -->
+  </footer>
+
+  <script src="./files/jquery.min.js"></script>
+  <script src="./files/jquery.mobilemenu.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+
+
+</body></html>
