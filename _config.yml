@@ -1,2 +1,3 @@
 name: Perifericas RGSoC 2016
 markdown: kramdown
+permalink: /:year/:month/:day/:title
